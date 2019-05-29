@@ -1,0 +1,65 @@
+<div class="carousel-inner w-100" role="listbox">
+  <div class="carousel-item active">
+    <div class="client-slide text-center">
+      <div class="rounded-circle m-auto client-img" style="background: url('img/client1.png') no-repeat 50%;"></div>
+      <p class="m-auto">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ipsa minus quisquam officia quibusdam dicta expedita hic, aut soluta, aliquam saepe voluptates non quam adipisci officiis quos magni repellat voluptatem.”</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="client-slide text-center">
+      <div class="rounded-circle m-auto client-img" style="background: url('img/client2.png') no-repeat 100%;"></div>
+      <p class="m-auto">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, provident necessitatibus! Ex pariatur, ea! Similique, fugit mollitia sint nisi amet voluptas cupiditate minus nobis in delectus aspernatur nihil laborum dolore.”</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="client-slide text-center">
+      <div class="rounded-circle m-auto client-img" style="background: url('img/client3.png') no-repeat 50%"></div>
+      <p class="m-auto">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eaque quidem incidunt mollitia iste obcaecati architecto veniam rerum quos voluptatibus provident minus, molestiae libero soluta deserunt et suscipit! Culpa, unde.”</p>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="client-slide text-center">
+      <div class="rounded-circle m-auto client-img" style="background: url('img/client4.png') no-repeat"></div>
+      <p class="m-auto">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia sed, nulla earum similique dolorum deleniti laboriosam non aliquam eos, enim laborum provident error quae, assumenda necessitatibus iure voluptas temporibus!”</p>
+    </div>
+  </div>
+</div>
+<a class="carousel-control-next rounded-circle" href="#recipeCarousel" role="button" data-slide="next">
+    <span class="fa fa-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-prev rounded-circle" href="#recipeCarousel" role="button" data-slide="prev">
+    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+</a>
+</div>
+
+
+<!-- Css code -->
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex; }
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(100%); }
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-100%); }
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0); }
+
+<!-- JS code -->
+
+$('.carousel .carousel-item').each(function(){
+   var next = $(this).next();
+   if (!next.length) {
+   next = $(this).siblings(':first');
+   }
+   next.children(':first-child').clone().appendTo($(this));
+ });

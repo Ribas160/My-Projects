@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+:root {
+  --hover-color: #18cfab;
+}
+
+/* Responsive menu */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  margin: 0;
+  line-height: 1.6;
+  color: #fff;
+  font-size: 18px;
+  padding: 0;
+}
+header {
+  position: fixed;
+}
+a {
+  decoration: none;
+}
+section {
+  width: 100%;
+}
+p {
+  font-size: 0.8rem;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(119, 119, 119);
+}
+.container {
+  width: 59vw;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 6.4vh;
+  margin-bottom: 9.3vh;
+}
+.section-head {
+  margin-top: 9.3vh;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(78, 78, 78);
+}
+h3 {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: rgb(113, 113, 113);
+  text-align: center;
+}
+h3:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+}
+nav {
+  height: 11.11vh;
+  max-height: 120px;
+  width: 100%;
+  color: #eee;
+  background-color: #44433e;
+  opacity: 0.6;
+  position: fixed;
+  font-weight: bold;
+  font-size: 0.7rem;
+  z-index: 0;
+}
+#logo {
+  padding: 0;
+  margin-left: 20vw;
+  width: 192px;
+  float: left;
+  margin-top: calc(11.11vh/2 - 33.5px);
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#logo_img {
+  background: url('../img/Polygon 1.png');
+  width: 58px;
+  height: 67px;
+}
+#logo_span {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 12px;
+  margin-top: 2px;
+  position: absolute;
+}
+#logo_text {
+  margin-top: 14px;
+}
+#logo_ham {
+  color: var(--hover-color);
+  margin-left: -5px;
+}
+nav ul {
+  padding: 0;
+  margin-top: calc(11.11vh/2 - 0.7rem);
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  float: right;
+  margin-right: 20vw;
+  z-index: 1;
+}
+nav li {
+  display: inline;
+  float: left;
+}
+nav a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--hover-color);
+}
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+#home {
+  background: url('../img/pexels-photo-877695.jpeg') no-repeat bottom/cover;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (max-width: 780px) {
+  .hide-on-small {
+    display: none;
+  }
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    color: var(--hover-color);
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+#option {
+  height: 367px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.light-option {
+  background-color: var(--hover-color);
+  border-top: 7px solid #fff;
+  height: 367px;
+}
+.dark-option {
+  background-color: #1c2a33;
+  border-top: 7px solid var(--hover-color);
+  height: 367px;
+}
+.option-img {
+  margin-top: 150px;
+  margin-left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.light-option > p {
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+.dark-option > p {
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--hover-color);
+  text-align: center;
+  margin-top: -20px;
+}
+#features {
+  display: grid;
+  grid-column-gap: 7.8vw;
+  grid-row-gap: 3.6vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: auto;
+}
+#features > div > h3 {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+#features > div > h3 > img {
+  margin-right: 1vw;
+}
+#about {
+  height: 676px;
+  background: #090f14;
+}
+#about-company {
+  width: 80vw;
+  float: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4vw;
+}
+#about-company > div {
+  height: 100%;
+  width: auto;
+  border: 3px solid white;
+}
+#about-company > div > h2 {
+  color: #fff;
+}
+#about-company > div > a {
+  margin-right: 20px;
+}
+#about-company > div > img {
+  width: 46vw;
+  margin-top: 9.3vh;
+  float: left;
+}
+@media screen and (max-width: 780px) {
+  #option {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  #features {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #44433e;
+    opacity: 0.6;
+    position: fixed;
+  }
+  /* .hide-on-small {
+    display: none;
+  } */
+  #logo {
+    margin-top: calc(11.11vh/2 - 33.5px);
+  }
+  nav {
+    height: auto;
+    border-bottom: 0;
+    width: 50%;
+    background-color: inherit;
+    position: relative;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    color: var(--hover-color);
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}

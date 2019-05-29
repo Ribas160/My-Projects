@@ -1,0 +1,186 @@
+// Main Sass File
+$primary-color: #998675;
+$font-color: #949494;
+
+* {
+  color: white;
+  text-decoration: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: $font-color;
+  h1 {
+    font-size: 52px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #555555;
+  }
+
+  h4 {
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+  }
+
+  h6 {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #8c8c8c;
+    max-width: 756px;
+    padding-bottom: 40px;
+    margin: auto;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #8c8c8c;
+  }
+
+  a {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+  }
+  a:hover {
+    color: $primary-color;
+  }
+
+  button {
+    border: none;
+  }
+  button:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+  }
+
+  button:focus {
+    outline: none;
+  }
+  .section-padding-top {
+    padding-top: 85px;
+  }
+  .section-padding-bottom {
+    padding-bottom: 85px;
+  }
+  .carousel {
+  position: absolute;
+  z-index: 0;
+    .slides {
+        height: 100vh;
+    }
+    li {
+      background: url('../img/slider/none-active-slide.png') no-repeat center;
+    }
+    .active {
+      background: url('../img/slider/active-slide.png') no-repeat center;
+    }
+  }
+  .main-button {
+    width: 170px;
+    height: 50px;
+    background: $primary-color;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  nav {
+    li:hover {
+      cursor: pointer;
+    }
+  }
+  header {
+    z-index: 1;
+    position: relative;
+    height: 100vh;
+
+    p {
+      color: white;
+    }
+
+    .main-title {
+      max-width: 589px;
+      top: 15vh;
+    }
+  }
+
+  .services-section {
+    h4 {
+      color: #555555;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 14px;
+      color: $font-color;
+      margin-top: 20px;
+      height: 60px;
+    }
+    .service {
+      height: auto;
+    }
+    .img {
+      height: 49px;
+    }
+    .line-bottom {
+      width: 70px;
+      border-bottom: 3px solid #f1eee9;
+      box-sizing: border-box;
+      height: 35px;
+      margin: auto;
+    }
+  }
+}
+.realization-head-section {
+  background: #fbfaf8;
+}
+.realization-section {
+  background: #fbfaf8;
+  .purchase-now {
+    height: 150px;
+    background: url('../img/realization/purchase-background.png') no-repeat;
+    h4 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+
+      span {
+        color: #bca891;
+      }
+    }
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: #615855;
+    }
+  }
+}

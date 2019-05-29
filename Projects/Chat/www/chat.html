@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/chat.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="container">
+      <div id="background">
+        <img id="triangle" src="img/Triangle.png" />
+      </div>
+      <header>
+        <menu>
+          <img id="back-arrow" src="img/Icon-Back.png" height="20px"/>
+          <div id="collocutors"><span id="user">Michael</span>, <span id="computer">Amy</span></div>
+          <img id="more" src="img/Icon-More.png" height="28px"/>
+        </menu>
+      </header>
+      <div id="chat">
+        <div id="time">
+          <img id="clock" src="img/Icon-Clock.png" />
+          TODAY AT
+          <span id="real-time">10:45AM</span>
+        </div>
+        <div id="dialogue"></div>
+      </div>
+      <div id="button-send"><img id="Icon-Send" src="img/Icon-Send.png" /></div>
+      <footer>
+        <div id="content">
+          <img id="camera" src="img/Icon-Camera.png" />
+          <form>
+            <fieldset>
+              <input id="message" type="text" placeholder="Type message..." />
+            </fieldset>
+          </form>
+        </div>
+      </footer>
+    </div>
+    <script src="script/chat.js"></script>
+  </body>
+</html>

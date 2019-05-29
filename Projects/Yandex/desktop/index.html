@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Яндекс дом</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div><a href="#"><img src = "img/Яндекс Дом@1x.png"/></a></div>
+          <div id="links">
+            <a href = "#" class="" id="">Сводка</a>
+            <a href = "#" class="" id="">Устройства</a>
+            <a href = "#" class="" id="">Сценарии</a>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <main>
+          <header>
+            Главное
+          </header>
+          <div id="main">
+            <div id="info">
+              <header>
+                Привет, Геннадий!
+              </header>
+              <p>Двери и окна закрыты, сигнализация включена.</p>
+              <div id="weather">
+                <div id="inside">
+                  <header>
+                    Дома
+                  </header>
+                  <p>+23</p>
+                </div>
+                <div id="outside">
+                  <header>
+                    За окном
+                  </header>
+                  <div>
+                    <p>+19</p>
+                    <img src="img/cloud-drizzle.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="mainDevices">
+              <div id="selectDevice">
+                  <div class="devices slider1"><img class="deviceImg" src = "img/icon_temperature@1x.png" /><div class="device">Philips Cooler</div><div class="time">Начнет охлаждать в 16:30</div></div>
+                  <div class="devices slider1"><img class="deviceImg" src = "img/icon_sun@1x.png" /><div class="device">Xiaomi Yeelight LED Smart Bulb</div><div class="time">Включится в 17:00</div></div>
+                  <div class="devices slider1"><img class="deviceImg" src = "img/icon_sun@1x.png" /><div class="device">ID-Link Omna 180 Cam</div><span class="time">Включится в 17:00</span></div>
+                  <div class="devices slider1"><img class="deviceImg" src = "img/icon_temperature@1x.png" /><div class="device">Elgato Eve Degree Connected</div><span class="time">Выключено до 17:00</span></div>
+                  <div class="devices slider1"><img class="deviceImg" src = "img/icon_sun@1x.png" /><div class="device">LIFX Mini Day & Dusk A60 E27</div><div class="time">Включится в 17:00</div></div>
+                  <div class="devices slider1"><img class="deviceImg" src = "img/icon_sun_2@1x.png" /><div class="device">Xiaomi Mi Air Purifier 2S</div><div class="time">Включено</div></div>
+                  <div class="devices slider1"><img class="deviceImg" src = "img/icon_sun@1x.png" /><div class="device">Philips Zhirui</div><div class="time">Выключено</div></div>
+              </div>
+              <button id="button1" onclick="Slider1.slideTop()"><img src = "img/arrow-double.png" /></button>
+            </div>
+          </div>
+        </main>
+        <div id="selectedScripts">
+          <header>
+            <p>Избранные сценарии</p>
+            <div class="arrows">
+              <img src = "img/_M Copy@2x.png" id="arrowLeft1"onclick="Slider2.slideLeft()" />
+              <img src = "img/_M Copy@1x.png" id="arrowRight1" onclick="Slider2.slideRight()"/>
+            </div>
+          </header>
+          <div id="selectedScriptsBlock">
+            <div class="devices2 slider2"><img class="devices2Img" src = "img/icon_sun_2@1x.png" /><div class="device2">Выключить весь свет в доме и во дворе</div><div class="time2"></div></div>
+            <div class="devices2 slider2"><img class="devices2Img" src = "img/icon_scheduled@1x.png" /><div class="device2">Я ухожу</div><div class="time2"></div></div>
+            <div class="devices2 slider2"><img class="devices2Img" src = "img/icon_sun_2@1x.png" /><div class="device2">Выключить свет в коридоре</div><div class="time2"></div></div>
+            <div class="devices2 slider2"><img class="devices2Img" src = "img/icon_temperature_2@1x.png" /><div class="device2">Набрать горячую ванну</div><div class="time2">Начнется в 18:00</div></div>
+            <div class="devices2 slider2"><img class="devices2Img" src = "img/icon_temperature_2@1x.png" /><div class="device2">Сделать пол теплым во всей квартире</div><div class="time2"></div></div>
+          </div>
+        </div>
+      </section>
+        <div id="selectedDevices">
+          <header>
+            <menu>
+              <p>Избранные устройства</p>
+              <nav>
+                <a href="#" class="select">Все</a>
+                <a href="#" class="select">Кухня</a>
+                <a href="#" class="select">Зал</a>
+                <a href="#" class="select">Лампочки</a>
+                <a href="#" class="select">Камеры</a>
+              </nav>
+            </menu>
+            <div class="arrows">
+              <img src = "img/_M Copy@2x.png" id="arrowLeft2" onclick="Slider3.slideLeft()" />
+              <img src = "img/_M Copy@1x.png" id="arrowRight2" onclick="Slider3.slideRight()" />
+            </div>
+          </header>
+          <div id="selectedDevicesBlock">
+            <div class="devices slider3 bulb"><img class="deviceImg" src = "img/icon_sun_2@1x.png" /><div class="device">Xiaomi Yeelight LED Smart Bulb</div><div class="time">Включено</div></div>
+            <div class="devices slider3 cam"><img class="deviceImg" src = "img/icon_sun@1x.png" /><div class="device">ID-Link Omna 180 Cam</div><span class="time">Включится в 17:00</span></div>
+            <div class="devices slider3 hall"><img class="deviceImg" src = "img/icon_temperature@1x.png" /><div class="device">Elgato Eve Degree Connected</div><span class="time">Выключено до 17:00</span></div>
+            <div class="devices slider3 bulb"><img class="deviceImg" src = "img/icon_sun@1x.png" /><div class="device">LIFX Mini Day & Dusk A60 E27</div><div class="time">Включится в 17:00</div></div>
+            <div class="devices slider3 hall"><img class="deviceImg" src = "img/icon_sun_2@1x.png" /><div class="device">Xiaomi Mi Air Purifier 2S</div><div class="time">Включено</div></div>
+            <div class="devices slider3 bulb"><img class="deviceImg" src = "img/icon_sun@1x.png" /><div class="device">Philips Zhirui</div><div class="time">Выключено</div></div>
+            <div class="devices slider3 kitchen"><img class="deviceImg" src = "img/icon_temperature@1x.png" /><div class="device">Philips Cooler</div><div class="time">Начнет охлаждать в 16:30</div></div>
+        </div>
+    </div>
+  </div>
+      <footer>
+        <div id="footerRef">
+          <a href="#">Помощь</a>
+          <a href="#">Обратная связь</a>
+          <a href="#">Разработчикам</a>
+          <a href="#">Условия использования</a>
+        </div>
+        <div id="yandex">© 2001-2017 ООО«Яндекс»</div>
+      </footer>
+      <script src="js/main.js"></script>
+  </body>
+</html>

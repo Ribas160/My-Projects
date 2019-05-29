@@ -1,0 +1,463 @@
+// Main Sass File
+
+$primary-color: #fc6f4e;
+$background-color: #f5f5f5;
+
+// Main style
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+button:focus {
+  outline: none;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+  padding-top: 148px;
+}
+h2 {
+  font-weight: 400;
+  max-width: 703px;
+  font-size: 16px;
+  padding-bottom: 114px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 31px;
+}
+
+.orange {
+  color: $primary-color;
+}
+
+.section-padding {
+  padding-bottom: 148px;
+}
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+// Navigation section
+
+nav {
+  background-color: $background-color;
+
+  .navbar-logo-img {
+    background: url('../img/Smart.png') no-repeat center;
+  }
+  button:hover {
+    box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
+  }
+}
+
+// Header section
+
+header {
+  background: url("../img/home-background.png") no-repeat 45% 45%;
+  z-index: 0;
+  .dark-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .home-inner {
+    padding-top: 75px;
+  }
+
+  // Form
+
+  .card {
+    height: 388px;
+    width: 374px;
+    align-items: center;
+    box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
+    border-radius: 5px;
+
+    textarea, input {
+      width: 294px;
+      resize: none;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid #c7c7c7;
+      font-size: 15px;
+      padding: 0;
+      outline: none;
+    }
+    .btn {
+      width: 236px;
+      height: 53px;
+      border-radius: 27px;
+      opacity: 0.7;
+      background-color: $primary-color;
+      color: white;
+      margin-top: -5px;
+    }
+    .btn:hover {
+      opacity: 1;
+      box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.08);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+//Working section
+
+.working-head-section {
+  height: 2000px;
+  width: 100%;
+  background: red;
+}
+
+.working-section {
+  color: white;
+  h4 {
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  h4, p {
+    opacity: 0.9;
+  }
+
+
+  // .t, .t, .t, .t {
+  // }
+  p {
+    font-size: 15px;
+  }
+  i {
+    font-size: 50px;
+    opacity: 0.8;
+  }
+
+  button {
+    width: 228px;
+    border-radius: 27px;
+    height: 55px;
+    margin-top: 3px;
+    img {
+      margin-right: 18px;
+    }
+  }
+
+  button:hover {
+    cursor: pointer;
+    box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.08);
+  }
+  .working-block1, .working-block2, .working-block3, .working-block4 {
+    width: 261px;
+    height: 263px;
+    padding-top: 53px;
+  }
+  .working-block1 {
+    background: #4eb2f7;
+  }
+  .working-block2 {
+    background: #c049f8;
+  }
+  .working-block3 {
+    background: #817eff;
+  }
+
+  .working-block4 {
+    background: #f74770;
+    i {
+      transform: rotateZ(340deg);
+    }
+  }
+
+  .working-block1:hover, .working-block2:hover, .working-block3:hover, .working-block4:hover {
+    box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
+    cursor: pointer;
+  }
+}
+
+// Featured section
+
+.featured-head-section, .featured-section, .team-head-section, .team-section {
+  background: $background-color;
+}
+
+.featured-block {
+  width: 360px;
+  height: 360px;
+  background: $primary-color;
+  margin-top: 23px;
+}
+
+// Services section
+
+.services-section {
+  .service-img {
+    width: 104px;
+    height: 92px;
+    background: #fafafa;
+    border-radius: 2px;
+    margin-top: 7px;
+  }
+  .service-img:hover {
+    background: white;
+    box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
+    cursor: pointer;
+  }
+  .button {
+    width: 238px;
+    border-radius: 27px;
+    height: 55px;
+    margin-top: 3px;
+
+    img {
+      margin-right: 18px;
+    }
+
+  }
+}
+
+.button {
+  width: 238px;
+  border-radius: 27px;
+  height: 55px;
+  margin-top: 3px;
+
+  img {
+    margin-right: 18px;
+  }
+}
+.button:hover {
+  box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.08);
+  cursor: pointer;
+}
+
+// Team section
+
+.team-section {
+  .team-card {
+    width: 360px;
+    height: 445px;
+    background: $primary-color;
+    margin-right: 20px;
+    margin-bottom: 40px;
+
+    button {
+      width: 262px;
+      height: 95px;
+      border-radius: 2px;
+      margin-top: 374px;
+      padding-top: 12px;
+
+      p {
+        font-weight: 300;
+      }
+    }
+    button:hover {
+      box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.08);
+      cursor: pointer;
+    }
+  }
+}
+
+// Client section
+
+.clients-section {
+
+  .carousel-inner {
+    padding-top: 50px;
+    padding-bottom: 27px;
+    }
+
+    .client-slide {
+      width: 536px;
+      height: 270px;
+      border: 1px solid #cfcfcf;
+      background: white;
+      margin-left: 39px;
+      font-family: 'Source Sans Pro';
+      font-weight: 400;
+      border-radius: 5px;
+
+      .client-img {
+        position: relative;
+        border: 1px solid #cfcfcf;
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        background: white;
+      }
+      p {
+        max-width: 456px;
+      }
+    }
+    .client-slide:hover {
+        box-shadow: 0px 0px 27px 0px rgba(20, 20, 21, 0.09);
+        cursor: pointer;
+    }
+    a {
+      height: 50px;
+      background-color: white;
+      opacity: 1;
+      width: 50px;
+      right: -40px;
+      top: 160px;
+      font-size: 17px;
+      color: black;
+      box-shadow: 0px 3px 14px 0px rgba(20, 20, 21, 0.08);
+
+      span {
+        font-size: 17px;
+        color: black;
+      }
+    }
+    a:hover {
+      background-color: $primary-color;
+    }
+
+}
+.clients-noslider {
+  display: none;
+}
+
+// Partners section
+
+.partners-section {
+  background: #fbfbfb;
+
+  .partners {
+    height: 202px;
+  }
+}
+
+// Style for Footer
+
+footer {
+  background: #f7f7f7;
+  .contacts {
+    height: 255px;
+    padding-top: 44px;
+
+    .social {
+      padding-top: 50px;
+
+      a {
+        width: 53px;
+        height: 53px;
+        font-size: 21.33px;
+        color: white;
+        background: #d3d3d3;
+        padding-top: 16px;
+        margin-right: 16px;
+        text-decoration: none;
+      }
+      a:hover {
+        background: $primary-color;
+      }
+      p {
+        padding-top: 16px;
+      }
+    }
+  }
+}
+
+/*
+
+CC 2.0 License Iatek LLC 2018
+Attribution required
+
+*/
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(100%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-100%);
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 1200px){
+  .working-block1, .working-block2, .working-block3, .working-block4 {
+    margin-bottom: 40px;
+  }
+
+  .featured-block {
+    margin: auto;
+    margin-top: 23px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+
+  .carousel {
+    display: none;
+  }
+  .clients-noslider {
+    display: block;
+    .client-slide {
+      margin-bottom: 100px;
+    }
+  }
+
+
+  // Working section
+  .t, .t, .t, .t {
+    width: auto;
+    margin-bottom: 40px;
+    margin-right: 31px;
+  }
+  // Featured section
+  .t, .t, .t, .t {
+    width: auto;
+  }
+  //Services section
+  #a {
+  width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
